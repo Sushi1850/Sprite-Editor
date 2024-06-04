@@ -1,0 +1,16 @@
+Author: Jared Hogan, Ryan Lake, Lauren Smith, Cristian Tapiero Maldonado, Kevin Lee
+
+About LeSporkEditor:
+LeSporkEditor is a sprite editing tool that allows user to create or modify their sprite. This product was create for the A7 sprite assignment.
+
+This editing tool allows the user to use certain and unique tools to help create their own sprite.
+The product is seperated in a MVC architecture.
+
+Some of the basic tools includes: pen tool, eraser tool, bucket fill tool, rectangle tool, and ellipse tool.
+The product also supports button actions for two seperate color allowing for easy use.
+
+Users can add new frame to display a new canvas which allows the user to create sprite on multi-frame for animation.
+There is a preview screen that displays all the frames in rapid succession.
+
+The product also always the user to save their sprite, open a sprite, or export it to a different file format.
+User are also able to choose a certain dimension for their sprite.

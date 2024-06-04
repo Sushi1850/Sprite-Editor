@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenu</class>
+ <widget class="QDialog" name="MainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>374</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>441</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>45</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Le Spork Editor</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>561</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Choose A Dimension To Start!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pixel8">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>210</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pixel8{
+border :5px solid ;
+border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+border-bottom-color : green;
+}
+#pixel8::pressed{
+border :5px solid ;
+border-top-color : pink; 
+border-left-color :red;
+border-right-color :green;
+border-bottom-color : yellow;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>8x8</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pixel16">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>210</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pixel16{
+border :5px solid ;
+border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+border-bottom-color : green;
+}
+#pixel16::pressed{
+border :5px solid ;
+border-top-color : pink; 
+border-left-color :red;
+border-right-color :green;
+border-bottom-color : yellow;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>16x16</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pixel32">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>210</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pixel32{
+border :5px solid ;
+border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+border-bottom-color : green;
+}
+#pixel32::pressed{
+border :5px solid ;
+border-top-color : pink; 
+border-left-color :red;
+border-right-color :green;
+border-bottom-color : yellow;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>32x32</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pixel64">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>270</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pixel64{
+border :5px solid ;
+border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+border-bottom-color : green;
+}
+#pixel64::pressed{
+border :5px solid ;
+border-top-color : pink; 
+border-left-color :red;
+border-right-color :green;
+border-bottom-color : yellow;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>64x64</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pixel128">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>270</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pixel128{
+border :5px solid ;
+border-top-color : red; 
+border-left-color :pink;
+border-right-color :yellow;
+border-bottom-color : green;
+}
+#pixel128::pressed{
+border :5px solid ;
+border-top-color : pink; 
+border-left-color :red;
+border-right-color :green;
+border-bottom-color : yellow;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>128x128</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

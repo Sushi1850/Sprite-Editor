@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>penImage.jpg</file>
+        <file>eraserImage.png</file>
+        <file>ellipseImage.png</file>
+        <file>rectangleImage.png</file>
+        <file>bucketImage.png</file>
+        <file>clickedEraserImage.png</file>
+        <file>clickedPenImage.jpg</file>
+        <file>clickedBucketImage.png</file>
+        <file>clickedEllipseImage.png</file>
+        <file>clickedRectangleImage.png</file>
+        <file>canvasBg.png</file>
+    </qresource>
+</RCC>

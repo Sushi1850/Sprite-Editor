@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1330</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="penButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>40</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+image: url(:penImage.jpg);
+
+border-radius: 4px;
+border: 4px solid red;
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">ToolsButtonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="eraserButton">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>40</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:eraserImage.png);
+background: black;
+border-radius: 4px;
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">ToolsButtonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="bucketButton">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>40</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+image: url(:bucketImage.png);
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">ToolsButtonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="rectangleButton">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>40</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:rectangleImage.png);
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">ToolsButtonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="ellipseButton">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>40</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:ellipseImage.png);
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">ToolsButtonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="canvas" name="canvasView">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>20</y>
+      <width>515</width>
+      <height>515</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(255, 255, 255, 0)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="canvasBackgroundLabel">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>541</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addFrameButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 4px;
+background-color: gray;</string>
+    </property>
+    <property name="text">
+     <string>Add A Frame</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color1Button">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>200</y>
+      <width>75</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color2Button">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>200</y>
+      <width>75</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>160</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>  Left Mouse Button       Right Mouse Button</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="previousFrame">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>100</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: gray;
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nextFrame">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>100</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: gray;
+</string>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteFrameButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>200</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 4px;
+background-color: gray;</string>
+    </property>
+    <property name="text">
+     <string>Delete Frame</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="leftMouseBackgroundLabel">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>190</y>
+      <width>95</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: gray;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rightMouseBackgroundLabel">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>190</y>
+      <width>95</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: gray;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="previewView">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>256</width>
+      <height>256</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: url(:/canvasBg.png)</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="brushTransparencySlider">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>320</y>
+      <width>351</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>290</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Brush Transparency Percent</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="onionSkin">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>20</y>
+      <width>515</width>
+      <height>515</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">opacity:  10;
+background: url(:/canvasBg.png) 
+</string>
+    </property>
+    <property name="backgroundBrush">
+     <brush brushstyle="NoBrush">
+      <color alpha="255">
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </brush>
+    </property>
+    <property name="foregroundBrush">
+     <brush brushstyle="NoBrush">
+      <color alpha="255">
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </brush>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="disablePreviewScaling">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>570</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QSlider" name="previewFPSSlider">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>231</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>60</number>
+    </property>
+    <property name="value">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="previewFPSLabel">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>270</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Preview FPS:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>580</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display preview without scaling</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="previewFPSValue">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>270</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearFrameButton">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>380</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 4px;
+background-color: gray;</string>
+    </property>
+    <property name="text">
+     <string>Clear Frame</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FrameIndex">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>170</y>
+      <width>49</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>170</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Current Frame</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>170</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Out of</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TotalFrames">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>170</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <zorder>rightMouseBackgroundLabel</zorder>
+   <zorder>leftMouseBackgroundLabel</zorder>
+   <zorder>canvasBackgroundLabel</zorder>
+   <zorder>eraserButton</zorder>
+   <zorder>bucketButton</zorder>
+   <zorder>rectangleButton</zorder>
+   <zorder>ellipseButton</zorder>
+   <zorder>addFrameButton</zorder>
+   <zorder>color1Button</zorder>
+   <zorder>color2Button</zorder>
+   <zorder>label</zorder>
+   <zorder>previousFrame</zorder>
+   <zorder>nextFrame</zorder>
+   <zorder>deleteFrameButton</zorder>
+   <zorder>previewView</zorder>
+   <zorder>brushTransparencySlider</zorder>
+   <zorder>label_2</zorder>
+   <zorder>disablePreviewScaling</zorder>
+   <zorder>onionSkin</zorder>
+   <zorder>canvasView</zorder>
+   <zorder>penButton</zorder>
+   <zorder>previewFPSSlider</zorder>
+   <zorder>previewFPSLabel</zorder>
+   <zorder>label_3</zorder>
+   <zorder>previewFPSValue</zorder>
+   <zorder>clearFrameButton</zorder>
+   <zorder>FrameIndex</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>TotalFrames</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1330</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuNew_Sprite">
+     <property name="title">
+      <string>New Sprite</string>
+     </property>
+     <addaction name="action8x8"/>
+     <addaction name="action16x16"/>
+     <addaction name="action32x32"/>
+     <addaction name="action64x64"/>
+     <addaction name="action128x128"/>
+    </widget>
+    <addaction name="menuNew_Sprite"/>
+    <addaction name="actionOpen_Sprite"/>
+    <addaction name="actionSave_Sprite"/>
+    <addaction name="actionExport"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Others</string>
+    </property>
+    <addaction name="actionAbout_LeeSporkSprite"/>
+    <addaction name="actionLeSporkSprite_Help"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_Sprite">
+   <property name="text">
+    <string>Open Sprite</string>
+   </property>
+  </action>
+  <action name="actionSave_Sprite">
+   <property name="text">
+    <string>Save Sprite</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>Export...</string>
+   </property>
+   <property name="toolTip">
+    <string>Export the current frame</string>
+   </property>
+  </action>
+  <action name="actionAbout_LeeSporkSprite">
+   <property name="text">
+    <string>About LeSporkSprite</string>
+   </property>
+  </action>
+  <action name="actionLeSporkSprite_Help">
+   <property name="text">
+    <string>LeSporkSprite Help</string>
+   </property>
+  </action>
+  <action name="action8x8">
+   <property name="text">
+    <string>8x8</string>
+   </property>
+  </action>
+  <action name="action16x16">
+   <property name="text">
+    <string>16x16</string>
+   </property>
+  </action>
+  <action name="action32x32">
+   <property name="text">
+    <string>32x32</string>
+   </property>
+  </action>
+  <action name="action64x64">
+   <property name="text">
+    <string>64x64</string>
+   </property>
+  </action>
+  <action name="action128x128">
+   <property name="text">
+    <string>128x128</string>
+   </property>
+  </action>
+  <action name="action256x256">
+   <property name="text">
+    <string>256x256</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>canvas</class>
+   <extends>QGraphicsView</extends>
+   <header>canvas.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="ToolsButtonGroup"/>
+ </buttongroups>
+</ui>

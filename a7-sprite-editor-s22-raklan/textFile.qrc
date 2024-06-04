@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/txt">
+        <file>LeSporkEditor.txt</file>
+        <file>LeSporkEditorHelp.txt</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,33 @@
+Welcome to the help menu:
+
+LeSporkEditor supports up to 128 pixels down to 8 pixels.
+
+Pen Tool: Draw one pixel at a time on the canvas. Supports click and drag.
+Eraser Tool: Erase one pixel at a time on the canvas back to the transparent color. Supports click and drag.
+Bucket Fill Tool: Fill in an area until the selected color comes into contact with another color.
+Rectangle Tool: Draws a rectangle by clicking two points (Does not work with click and drag).
+Ellipse Tool: Draws an ellipse by clicking two points (Does not work with click and drag).
+
+Left click on canvas: Uses the left color.
+Right click on canvas: Uses the right color.
+Click the color to change their color to your liking.
+
+Add Frame: Adds a frame to the editor.
+Delete Frame: Delete a frame from the editor.
+Next and Previous Frame: Denoted as < and >, allowing to switch frames (if any)
+Onion Skin: The transparent background when adding a new frame is an onion skin, which is a reference
+of the last frame.
+
+The preview shows the all the frames in the program.
+Adjust the speed of the preview fps to see the frame switch faster.
+
+File Drop Down: 
+        New Sprite Option: Create a new window with a new canvas with multiple option of size.
+        Open Sprite Option: Open a saved sprite frames.
+        Save Sprite Option: Save the current window sprite frames.
+        Export Option: Export the file to different file types.
+		
+Help Drop Down:
+        About LeSporkEditor Option: Display a dialog about the LeSporkEditor.
+        LeSporkEditorHelp Option: Display button action and editor features.
+		
